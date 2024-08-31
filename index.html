@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-background"></div>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdM00000B46mt" method="POST">
+            <input type="hidden" name="oid" value="00DdM00000B46mt">
+            <input type="hidden" name="retURL" value="http://google.com">
+
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input id="company" maxlength="40" name="company" size="20" type="text" />
+            </div>
+
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" maxlength="80" name="email" size="20" type="text" />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+            </div>
+
+            <div class="form-group">
+                <label for="00NdM000004ynAI">Product Interest</label>
+                <select id="00NdM000004ynAI" name="00NdM000004ynAI" title="Product Interest">
+                    <option value="">--None--</option>
+                    <option value="GC1000 series">GC1000 series</option>
+                    <option value="GC5000 series">GC5000 series</option>
+                    <option value="GC3000 series">GC3000 series</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
