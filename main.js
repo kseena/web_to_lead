@@ -6,6 +6,8 @@ function validateForm() {
   let phone = document.getElementById('phone').value;
   let productInterest = document.getElementById('00NdM000004ynAI').value;
 
+  console.log(company, firstName, lastName, email, phone, productInterest); // Debugging line
+
   if (company === "" || firstName === "" || lastName === "" || email === "" || phone === "" || productInterest === "") {
       alert("All fields must be filled out");
       return false;
