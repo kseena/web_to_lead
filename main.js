@@ -8,6 +8,10 @@ function validateForm() {
 
   console.log(company, firstName, lastName, email, phone, productInterest); // Debugging line
 
+   function onSubmit(token) {
+        document.getElementById("myForm").submit();
+    }
+  
   if (company === "" || firstName === "" || lastName === "" || email === "" || phone === "" || productInterest === "") {
       alert("All fields must be filled out");
       return false;
